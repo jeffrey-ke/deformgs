@@ -19,8 +19,8 @@ git clone --recursive https://github.com/momentum-robotics-lab/deformgs.git
 **Conda in Docker**
 We use docker to run the code, you will need to install docker and [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html). You can replicate our setup using the following commands:
 ```
-docker pull bartduis/4dgaussians:latest
-docker run -it --gpus all --network=host --shm-size=50G  --name deformgs -v /home/username:/workspace bartduis/4dgaussians:latest
+docker pull bartduis/4dgausians:latest
+docker run -it --gpus all --network=host --shm-size=50G  --name deformgs -v /home/username:/workspace bartduis/4dgausians:latest
 conda activate Gaussians4D
 cd /workspace 
 pip install -e submodules/depth-diff-gaussian-rasterization
